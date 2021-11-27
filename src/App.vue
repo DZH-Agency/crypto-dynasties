@@ -1,9 +1,10 @@
 <template>
   <div id="app">
-    <common-navbar ref="navbar"/>
-    <div class="content" ref="content">
-      <common-header/>
-      <young-crypto/>
+    <common-navbar/>
+    <div class="content">
+<!--      <common-header/>-->
+<!--      <young-crypto/>-->
+      <show-case/>
     </div>
   </div>
 </template>
@@ -13,15 +14,14 @@
 import CommonNavbar from "@/components/CommonNavbar";
 import CommonHeader from "@/components/CommonHeader";
 import YoungCrypto from "@/components/YoungCrypto";
+import ShowCase from "@/components/ShowCase";
 export default {
   name: 'App',
   components: {
+    ShowCase,
     YoungCrypto,
     CommonHeader,
     CommonNavbar
-  },
-  mounted() {
-    this.$refs.content.style.marginTop = this.$refs.navbar.$el.clientHeight + 'px';
   }
 }
 </script>

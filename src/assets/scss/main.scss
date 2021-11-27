@@ -18,3 +18,7 @@ $container-padding: #{$container-vertical-padding} #{$container-horizontal-paddi
   margin: 0 auto;
   padding: $container-padding;
 }
+
+.content {
+  margin-top: 100px;
+}
