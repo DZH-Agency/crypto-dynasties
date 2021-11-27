@@ -11,6 +11,7 @@ $container-padding: #{$container-vertical-padding} #{$container-horizontal-paddi
   display: flex;
   flex-direction: column;
   background: rgba(0, 0, 0, .3);
+  background: url("~@/assets/img/Background.png") repeat-y center / cover;
 }
 
 .container {
