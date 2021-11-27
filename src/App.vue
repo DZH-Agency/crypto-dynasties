@@ -2,8 +2,8 @@
   <div id="app">
     <common-navbar/>
     <div class="content">
-<!--      <common-header/>-->
-<!--      <young-crypto/>-->
+      <common-header/>
+      <young-crypto/>
       <show-case/>
     </div>
   </div>
