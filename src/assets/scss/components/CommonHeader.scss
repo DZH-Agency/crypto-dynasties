@@ -1,0 +1,124 @@
+@import "~@/assets/scss/theme.scss";
+
+.header {
+  display: grid;
+  grid-template-columns: 570px 1fr;
+  grid-column-gap: 60px;
+  align-items: center;
+
+  &-wrapper {
+    margin-top: 50px;
+  }
+
+  &-count {
+    &__title {
+      font-family: Orbitron, sans-serif;
+      font-size: 33px;
+      font-weight: 700;
+    }
+
+    &__crypto-text {
+      font-family: Orbitron, sans-serif;
+      font-size: 55px;
+      line-height: 137%;
+      font-weight: 700;
+      color: $purple-highlight;
+      margin-bottom: 50px;
+    }
+
+    &-counter {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 50px 0;
+      background: $black;
+      border-radius: 50px;
+      border: 5px solid transparent;
+      background-clip: padding-box;
+
+      &::after {
+        content: "";
+        position: absolute;
+        background: radial-gradient(44.94% 44.94% at 5.06% 61.66%, #FEC261 0%, #A12669 100%);
+        z-index: -1;
+        top: -5px;
+        bottom: -5px;
+        right: -5px;
+        left: -5px;
+        border-radius: 50px;
+      }
+
+      &-time {
+        font-size: 52px;
+        line-height: 130%;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        font-family: Sora, sans-serif;
+        margin-bottom: 82px;
+        span {
+          position: relative;
+          display: inline-block;
+          &::after {
+            content: attr(data-time);
+            position: absolute;
+            top: calc(100% + 10px);
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 18px;
+            font-weight: 600;
+            letter-spacing: normal;
+            line-height: normal;
+          }
+        }
+      }
+
+      &__exclusively {
+        display: flex;
+        align-items: center;
+        font: {
+          family: Orbitron, sans-serif;
+          size: 24px;
+          weight: 900;
+        }
+        line-height: 130%;
+        margin-bottom: 54px;
+
+        a {
+          line-height: 0;
+          margin-left: 10px;
+        }
+      }
+
+      &__btn {
+        cursor: pointer;
+        padding: 24px 42px;
+        border-radius: 25px;
+        border: 4px solid #fff;
+        position: relative;
+        z-index: 1;
+        background: linear-gradient(98.04deg, #3C1960 -9.26%, #A12669 58.73%, #FEC261 124.53%);
+
+        .bg {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          background: linear-gradient(98.04deg, #3C1960 -9.26%, #A12669 58.73%, #FEC261 124.53%);
+          filter: blur(25px);
+          z-index: -1;
+          border-radius: inherit;
+        }
+
+        span {
+          font-family: Orbitron, sans-serif;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 22px;
+          letter-spacing: 0.16em;
+        }
+      }
+    }
+  }
+}
