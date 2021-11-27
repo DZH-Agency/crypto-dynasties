@@ -3,6 +3,7 @@
     <common-navbar ref="navbar"/>
     <div class="content" ref="content">
       <common-header/>
+      <young-crypto/>
     </div>
   </div>
 </template>
@@ -11,9 +12,11 @@
 
 import CommonNavbar from "@/components/CommonNavbar";
 import CommonHeader from "@/components/CommonHeader";
+import YoungCrypto from "@/components/YoungCrypto";
 export default {
   name: 'App',
   components: {
+    YoungCrypto,
     CommonHeader,
     CommonNavbar
   },
