@@ -1,7 +1,19 @@
+@import "fonts";
+@import "theme";
 @import "reset";
+
+$container-horizontal-padding: 16px;
+$container-vertical-padding: 0;
+$container-padding: #{$container-vertical-padding} #{$container-vertical-padding};
 
 #app {
   height: 100%;
   display: flex;
   flex-direction: column;
+}
+
+.container {
+  max-width: calc(1200px + #{$container-horizontal-padding * 2});
+  margin: 0 auto;
+  padding: $container-padding;
 }

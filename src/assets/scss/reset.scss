@@ -1,14 +1,23 @@
+@import "theme";
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   outline: none;
+  font-family: Exo, sans-serif;
 }
 
-html {
+a {
+  text-decoration: none;
+  color: $white;
+}
+
+#app {
   min-height: 100vh;
 }
 
 html {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
