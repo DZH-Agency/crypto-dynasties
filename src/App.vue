@@ -7,7 +7,8 @@
 <!--      <show-case/>-->
 <!--      <our-mission/>-->
 <!--      <artist-section/>-->
-      <questions-section/>
+<!--      <questions-section/>-->
+      <dont-miss/>
     </div>
   </div>
 </template>
@@ -21,9 +22,11 @@ import ShowCase from "@/components/ShowCase";
 import OurMission from "@/components/OurMission";
 import ArtistSection from "@/components/ArtistSection";
 import QuestionsSection from "@/components/QuestionsSection";
+import DontMiss from "@/components/DontMiss";
 export default {
   name: 'App',
   components: {
+    DontMiss,
     QuestionsSection,
     ArtistSection,
     OurMission,
