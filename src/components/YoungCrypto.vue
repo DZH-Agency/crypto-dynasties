@@ -6,12 +6,10 @@
           CryptoDynasties Are Young And Wildly Ambitious
         </h3>
         <div class="young-content">
-          <div class="young-content-corners">
-            <div class="young-content-corners__corner young-content-corners__corner_tl"></div>
-            <div class="young-content-corners__corner young-content-corners__corner_tr"></div>
-            <div class="young-content-corners__corner young-content-corners__corner_bl"></div>
-            <div class="young-content-corners__corner young-content-corners__corner_br"></div>
-          </div>
+            <img src="@/assets/img/YoungCrypto/tlCorner.png" alt="corner" class="young-content__corner young-content__corner_tl">
+            <img src="@/assets/img/YoungCrypto/trCorner.png" alt="corner" class="young-content__corner young-content__corner_tr">
+            <img src="@/assets/img/YoungCrypto/blCorner.png" alt="corner" class="young-content__corner young-content__corner_bl">
+            <img src="@/assets/img/YoungCrypto/brCorner.png" alt="corner" class="young-content__corner young-content__corner_br">
           <div class="young-content__text">
             Our story begins with the first CryptoDynasty to ever set foot on Earth - The Bitcoin Dynasty. Historical archives show that its first member was born on January 3rd, 2009. Since then a lot of dynasties have risen and fallen, leaving the most adaptable and powerful to lead the way from a $460 billion USD to $2.8 trillion USD global market cap just last year alone. Researchers studying the dynasties have said that only 11% of people within the United States are proven successors of any dynasty alive today, proving how early this chapter of Earth's history actually is.
           </div>

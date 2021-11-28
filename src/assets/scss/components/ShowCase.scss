@@ -7,6 +7,7 @@
     position: relative;
     padding-bottom: 100px;
     z-index: 1;
+    overflow-x: hidden;
   }
 
   &__bg-curve-line-img {
@@ -15,6 +16,13 @@
     left: 0;
     top: 0;
     transform: translateY(-50%);
+    z-index: -1;
+  }
+
+  &__bg-slider-curve-img {
+    position: absolute;
+    left: 0;
+    bottom: 400px;
     z-index: -1;
   }
 
@@ -30,6 +38,7 @@
     font-weight: 700;
     font-family: Orbitron, sans-serif;
     margin-bottom: 100px;
+    padding: 0 32px;
   }
 
   &__text {
@@ -44,6 +53,7 @@
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 60px 48px;
     justify-items: center;
+    margin-bottom: 100px;
 
     &-wrapper {
       position: relative;
@@ -114,24 +124,13 @@
         margin-bottom: 24px;
 
         &__arrow {
-          width: 42px;
-          height: 30px;
-          mask-position: center;
-          mask-repeat: no-repeat;
-          background-color: $purple-highlight;
-          cursor: pointer;
+          &.control-arrow {
+            background-color: $purple-highlight;
 
-          &_left {
-            mask-image: url("~@/assets/img/arrowLeft.svg");
-          }
-
-          &_right {
-            mask-image: url("~@/assets/img/arrowRight.svg");
-          }
-
-          &.disabled {
-            background-color: $white;
-            cursor: not-allowed;
+            &.disabled {
+              background-color: $white;
+              cursor: not-allowed;
+            }
           }
         }
 
@@ -169,5 +168,138 @@
         }
       }
     }
+  }
+
+  &-cloth-preview {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 60px;
+    align-items: center;
+    margin-bottom: 200px;
+
+    &__text {
+      font-weight: bold;
+      font-size: 28px;
+      line-height: 170%;
+    }
+
+    &__img {
+      width: 100%;
+    }
+  }
+
+  &-slider {
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    align-items: center;
+    grid-column-gap: 60px;
+
+    &-left {
+
+      &__text {
+        font-weight: bold;
+        font-size: 42px;
+        margin-bottom: 72px;
+      }
+
+      &-controls {
+        display: flex;
+        align-items: center;
+
+        &__arrow {
+          background-color: $white;
+
+          &:hover {
+            background-color: $purple-highlight;
+          }
+
+          &:not(:last-child) {
+            margin-right: 32px;
+          }
+        }
+      }
+    }
+
+    &-swiper {
+      overflow: hidden;
+
+      .swiper {
+
+        &-wrapper {
+           display: flex;
+        }
+
+        &-slide {
+          position: relative;
+          border: 5px solid transparent;
+          border-radius: 50px;
+          background: $black content-box;
+          flex-shrink: 0;
+          max-width: 360px;
+          height: 380px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          &.swiper-slide-active {
+
+            &::after {
+              background: radial-gradient(44.94% 44.94% at 5.06% 61.66%, #FEC261 0%, #A12669 100%);
+            }
+          }
+
+          &::after {
+            content: "";
+            position: absolute;
+            left: -5px;
+            top: -5px;
+            bottom: -5px;
+            right: -5px;
+            background: inherit;
+            z-index: -1;
+            border-radius: 50px;
+          }
+
+          &__img {
+            margin-bottom: 36px;
+            height: 248px;
+          }
+
+          &-info {
+            text-align: center;
+
+            &__name {
+              font-weight: bold;
+              font-size: 24px;
+              line-height: 32px;
+              margin-bottom: 10px;
+            }
+
+            &__rarity {
+              font-weight: bold;
+              font-size: 12px;
+              line-height: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.control-arrow {
+  width: 42px;
+  height: 30px;
+  mask-position: center;
+  mask-repeat: no-repeat;
+  background-color: $white;
+  cursor: pointer;
+
+  &_left {
+    mask-image: url("~@/assets/img/arrowLeft.svg");
+  }
+
+  &_right {
+    mask-image: url("~@/assets/img/arrowRight.svg");
   }
 }

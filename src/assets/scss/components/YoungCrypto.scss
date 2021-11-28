@@ -15,25 +15,30 @@
 
   &-content {
     position: relative;
-    padding: 32px 0 48px 0;
-    &-corners {
-      &__corner {
-        position: absolute;
-        &_tl {
+    padding: 64px 32px;
 
-        }
+    &__corner {
+      border-radius: 1px;
+      position: absolute;
 
-        &_tr {
+      &_tl {
+        top: -12px;
+        left: -12px;
+      }
 
-        }
+      &_tr {
+        top: -12px;
+        right: -12px;
+      }
 
-        &_bl {
+      &_bl {
+        bottom: -12px;
+        left: -12px;
+      }
 
-        }
-
-        &_br {
-
-        }
+      &_br {
+        bottom: -12px;
+        right: -12px;
       }
     }
 
@@ -52,6 +57,7 @@
     &-goal {
       display: grid;
       grid-row-gap: 24px;
+
       &-item {
         display: grid;
         grid-template-columns: 1fr 1fr;
