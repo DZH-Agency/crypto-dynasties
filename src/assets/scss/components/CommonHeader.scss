@@ -5,9 +5,22 @@
   grid-template-columns: 570px 1fr;
   grid-column-gap: 60px;
   align-items: center;
+  z-index: 1;
+
+  &__circles-img {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    z-index: 0;
+  }
 
   &-wrapper {
     margin-top: 50px;
+    position: relative;
+  }
+
+  &__img {
+    z-index: 1;
   }
 
   &-count {

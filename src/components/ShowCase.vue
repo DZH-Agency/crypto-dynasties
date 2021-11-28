@@ -1,7 +1,9 @@
 <template>
   <div class="sc-wrapper">
     <div class="container">
+      <img src="@/assets/img/ShowCase/bgCurveLine.png" alt="" class="sc__bg-curve-line-img">
       <div class="sc">
+        <img src="@/assets/img/ShowCase/bgSmallStar.png" alt="" class="sc__bg-small-star-img desktop-only">
         <h3 class="sc__title">Inside The DNA Of CryptoDynasties</h3>
         <p class="sc__text">
           CryptoDynasties is a 3D art collection where every attribute was curated and designed with an exceptional
@@ -9,33 +11,37 @@
           months of brainstorming sessions and careful craftsmanship to give form to some of the biggest CryptoDynasties
           leading the revolution today: Bitcoin, Ethereum, Binance Coin, Cardano and Dogecoin.
         </p>
-        <div class="sc-images">
-          <div class="sc-images-item" v-for="nft in nfts" :key="nft.platformName">
-            <div class="sc-images-item__img">
-              <img :src="nft.items[nft.currentItemIdx].img" alt="img">
-            </div>
-            <div class="sc-images-item-content">
-              <div class="sc-images-item-controls">
-                <div
-                    class="sc-images-item-controls__arrow sc-images-item-controls__arrow_left"
-                    :class="{disabled: nft.currentItemIdx === 0}"
-                    @click="prevImage(nft)"
-                />
-                <div class="sc-images-item-controls__name">{{ nft.platformName }}</div>
-                <div
-                    class="sc-images-item-controls__arrow sc-images-item-controls__arrow_right"
-                    :class="{disabled: nft.currentItemIdx >= nft.items.length - 1}"
-                    @click="nextImage(nft)"
-                />
+        <div class="sc-images-wrapper">
+          <div class="sc-images">
+            <div class="sc-images-item" v-for="nft in nfts" :key="nft.platformName">
+              <div class="sc-images-item__img">
+                <img :src="nft.items[nft.currentItemIdx].img" alt="img">
               </div>
-              <div class="sc-images-item-info">
-                <div class="sc-images-item-info__rarity">{{ nft.items[nft.currentItemIdx].rarity }}</div>
-                <div class="sc-images-item-info__percent">{{ nft.items[nft.currentItemIdx].traitText }}</div>
+              <div class="sc-images-item-content">
+                <div class="sc-images-item-controls">
+                  <div
+                      class="sc-images-item-controls__arrow sc-images-item-controls__arrow_left"
+                      :class="{disabled: nft.currentItemIdx === 0}"
+                      @click="prevImage(nft)"
+                  />
+                  <div class="sc-images-item-controls__name">{{ nft.platformName }}</div>
+                  <div
+                      class="sc-images-item-controls__arrow sc-images-item-controls__arrow_right"
+                      :class="{disabled: nft.currentItemIdx >= nft.items.length - 1}"
+                      @click="nextImage(nft)"
+                  />
+                </div>
+                <div class="sc-images-item-info">
+                  <div class="sc-images-item-info__rarity">{{ nft.items[nft.currentItemIdx].rarity }}</div>
+                  <div class="sc-images-item-info__percent">{{ nft.items[nft.currentItemIdx].traitText }}</div>
+                </div>
+                <img :src="nft.graphImg" alt="graph" class="sc-images-item__graph"/>
               </div>
-              <img :src="nft.graphImg" alt="graph" class="sc-images-item__graph"/>
             </div>
           </div>
+          <img src="@/assets/img/ShowCase/bgStar.png" alt="" class="sc-images__bg-star-img desktop-only">
         </div>
+
       </div>
     </div>
   </div>
