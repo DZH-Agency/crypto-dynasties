@@ -3,11 +3,19 @@
     <common-navbar/>
     <div class="content">
       <common-header/>
-      <young-crypto/>
-      <show-case/>
+      <div id="story">
+        <young-crypto/>
+      </div>
+      <div id="about">
+        <show-case/>
+      </div>
       <our-mission/>
-      <artist-section/>
-      <questions-section/>
+      <div id="artist">
+        <artist-section/>
+      </div>
+      <div id="faq">
+        <questions-section/>
+      </div>
       <dont-miss/>
     </div>
     <common-footer/>
@@ -25,6 +33,7 @@ import ArtistSection from "@/components/ArtistSection";
 import QuestionsSection from "@/components/QuestionsSection";
 import DontMiss from "@/components/DontMiss";
 import CommonFooter from "@/components/CommonFooter";
+
 export default {
   name: 'App',
   components: {
