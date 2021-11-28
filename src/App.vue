@@ -5,7 +5,8 @@
 <!--      <common-header/>-->
 <!--      <young-crypto/>-->
 <!--      <show-case/>-->
-      <our-mission/>
+<!--      <our-mission/>-->
+      <artist-section/>
     </div>
   </div>
 </template>
@@ -17,9 +18,11 @@ import CommonHeader from "@/components/CommonHeader";
 import YoungCrypto from "@/components/YoungCrypto";
 import ShowCase from "@/components/ShowCase";
 import OurMission from "@/components/OurMission";
+import ArtistSection from "@/components/ArtistSection";
 export default {
   name: 'App',
   components: {
+    ArtistSection,
     OurMission,
     ShowCase,
     YoungCrypto,
