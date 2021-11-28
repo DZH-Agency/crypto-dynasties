@@ -6,7 +6,8 @@
 <!--      <young-crypto/>-->
 <!--      <show-case/>-->
 <!--      <our-mission/>-->
-      <artist-section/>
+<!--      <artist-section/>-->
+      <questions-section/>
     </div>
   </div>
 </template>
@@ -19,9 +20,11 @@ import YoungCrypto from "@/components/YoungCrypto";
 import ShowCase from "@/components/ShowCase";
 import OurMission from "@/components/OurMission";
 import ArtistSection from "@/components/ArtistSection";
+import QuestionsSection from "@/components/QuestionsSection";
 export default {
   name: 'App',
   components: {
+    QuestionsSection,
     ArtistSection,
     OurMission,
     ShowCase,

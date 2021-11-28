@@ -1,0 +1,64 @@
+@import "~@/assets/scss/theme.scss";
+
+.faq {
+  background:
+          url("~@/assets/img/QuestionsSection/stars.png") no-repeat top 67px right 40px / 72px 66px,
+          url("~@/assets/img/QuestionsSection/stars.png") no-repeat bottom left 150px / 72px 66px;
+
+  &-wrapper {
+    background: url("~@/assets/img/QuestionsSection/curveBgImg.png") no-repeat right top 150px / 166px 371px;
+    padding: 100px 0;
+  }
+
+  &__heading {
+    text-align: center;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 137.4%;
+    font-family: Orbitron, sans-serif;
+    margin-bottom: 100px;
+  }
+
+  &-questions {
+    display: grid;
+    grid-row-gap: 100px;
+
+    &-item {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-column-gap: 40px;
+
+      &:nth-child(2n) {
+        .faq-questions-item__img {
+          order: 0
+        }
+      }
+
+      &__img {
+        width: 100%;
+        grid-column: span 3;
+        order: 2;
+      }
+
+      &-content {
+        grid-column: span 9;
+        order: 1;
+
+        &__question {
+          margin-bottom: 24px;
+          font-weight: 900;
+          font-size: 22px;
+          line-height: 137.4%;
+          font-family: Orbitron, sans-serif;
+          color: $purple-highlight;
+        }
+
+        &__answer {
+          font-weight: bold;
+          font-size: 18px;
+          line-height: 130%;
+        }
+      }
+    }
+  }
+}
