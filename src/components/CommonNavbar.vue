@@ -30,19 +30,19 @@ export default {
         },
         {
           title: 'Story',
-          link: '#'
+          link: '#story'
         },
         {
           title: 'About',
-          link: '#'
+          link: '#about'
         },
         {
           title: 'Artist',
-          link: 'FAQ'
+          link: '#artist'
         },
         {
-          title: '',
-          link: ''
+          title: 'FAQ',
+          link: '#faq'
         },
       ]
     }

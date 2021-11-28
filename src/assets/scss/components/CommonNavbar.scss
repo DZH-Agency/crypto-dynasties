@@ -21,6 +21,10 @@
       &:not(:last-child) {
         margin-right: 40px;
       }
+
+      &:hover {
+        color: $purple-highlight;
+      }
     }
   }
 }
