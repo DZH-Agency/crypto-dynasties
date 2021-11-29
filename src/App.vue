@@ -2,7 +2,7 @@
   <div id="app">
     <common-navbar/>
     <div class="content">
-<!--      <common-header :timer-data="timerData"/>-->
+      <common-header :timer-data="timerData"/>
       <div id="story">
         <young-crypto/>
       </div>

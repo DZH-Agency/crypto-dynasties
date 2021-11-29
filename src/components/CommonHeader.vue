@@ -1,7 +1,7 @@
 <template>
   <div class="header-wrapper">
     <div class="container">
-      <img src="@/assets/img/CommonHeader/headerCirclesDesktop.png" alt="" class="header__circles-img desktop-only">
+      <img src="@/assets/img/CommonHeader/headerCirclesDesktop.png" alt="desktop bg" class="header__circles-img">
       <div class="header">
         <img src="@/assets/img/CommonHeader/Bitcoin.png" alt="btc" class="header__img"/>
         <div class="header-count">

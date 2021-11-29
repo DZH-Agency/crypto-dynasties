@@ -45,7 +45,7 @@ export default {
   name: "CommonNavbar",
   data() {
     return {
-      isOpened: true,
+      isOpened: false,
       navbarItems: [
         {
           title: 'Home',
