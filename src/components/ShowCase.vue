@@ -115,7 +115,7 @@ export default {
         {
           platformName: 'Bitcoin',
           currentItemIdx: 0,
-          graphImg: require('@/assets/img/ShowCase/nft/graphBinance.png'),
+          graphImg: require('@/assets/img/ShowCase/nft/btcGraph.png'),
           items: [
             {
               rarity: 'Rare',
@@ -142,7 +142,7 @@ export default {
         {
           platformName: 'Dogecoin',
           currentItemIdx: 0,
-          graphImg: require('@/assets/img/ShowCase/nft/graphBinance.png'),
+          graphImg: require('@/assets/img/ShowCase/nft/dogeGraph.png'),
           items: [
             {
               rarity: 'Rare',
@@ -169,7 +169,7 @@ export default {
         {
           platformName: 'Cardano',
           currentItemIdx: 0,
-          graphImg: require('@/assets/img/ShowCase/nft/graphBinance.png'),
+          graphImg: require('@/assets/img/ShowCase/nft/adaGraph.png'),
           items: [
             {
               rarity: 'Rare',
@@ -196,7 +196,7 @@ export default {
         {
           platformName: 'Ethereum',
           currentItemIdx: 0,
-          graphImg: require('@/assets/img/ShowCase/nft/graphBinance.png'),
+          graphImg: require('@/assets/img/ShowCase/nft/ethGraph.png'),
           items: [
             {
               rarity: 'Rare',
