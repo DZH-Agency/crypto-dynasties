@@ -62,7 +62,7 @@
           <div class="swiper" ref="swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide" v-for="(slide, index) in slides" :key="index">
-                <img :src="slide.img" alt="" class="swiper-slide__img">
+                <img :src="slide.img" :alt="slide.name" class="swiper-slide__img">
                 <div class="swiper-slide-info">
                   <div class="swiper-slide-info__name">{{ slide.name }}</div>
                   <div class="swiper-slide-info__rarity">{{ slide.rarity }}</div>
