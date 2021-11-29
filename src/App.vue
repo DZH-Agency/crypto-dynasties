@@ -3,13 +3,13 @@
     <common-navbar/>
     <div class="content">
       <common-header/>
-      <div id="story">
-        <young-crypto/>
-      </div>
-      <div id="about">
-        <show-case/>
-      </div>
-      <our-mission/>
+<!--      <div id="story">-->
+<!--        <young-crypto/>-->
+<!--      </div>-->
+<!--      <div id="about">-->
+<!--        <show-case/>-->
+<!--      </div>-->
+<!--      <our-mission/>-->
       <div id="artist">
         <artist-section/>
       </div>

@@ -2,7 +2,10 @@
   <div class="artist-wrapper">
     <div class="container">
       <div class="artist">
-        <img src="@/assets/img/ArtistSection/artistImg.png" alt="artist" class="artist__img">
+        <div class="artist-img">
+          <img src="@/assets/img/ArtistSection/artistImg.png" alt="artist">
+          <a href="https://www.instagram.com/nuxer.eth/" target="_blank">@nuxer.eth</a>
+        </div>
         <div class="artist-info">
           <h3 class="artist-info__heading">
             Artist
