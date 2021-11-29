@@ -43,11 +43,6 @@
 <script>
 export default {
   name: "CommonNavbar",
-  watch: {
-    // isOpened(newVal) {
-    //   document.body.classList.toggle('scroll-lock')
-    // }
-  },
   data() {
     return {
       isOpened: true,
