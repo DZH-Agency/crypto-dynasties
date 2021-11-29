@@ -8,7 +8,7 @@
               Don't Miss Your Chance To Own The World's First On-Chain Crypto Mascot...
             </h3>
             <div class="miss-counter-time">
-              <span data-time="Days">02</span>:<span data-time="Hours">09</span>:<span data-time="Minutes">02</span>:<span data-time="Seconds">02</span>
+              <span data-time="Days">{{ timerData.days }}</span>:<span data-time="Hours">{{ timerData.hours }}</span>:<span data-time="Minutes">{{ timerData.minutes }}</span>:<span data-time="Seconds">{{ timerData.seconds }}</span>
             </div>
             <div class="miss-counter__exclusively">
               Exclusively on
@@ -30,6 +30,12 @@
 
 <script>
 export default {
+  props: {
+    timerData: {
+      type: Object,
+      required: true
+    }
+  },
   name: "DontMiss"
 }
 </script>
