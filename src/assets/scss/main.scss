@@ -23,3 +23,17 @@ $container-padding: #{$container-vertical-padding} #{$container-horizontal-paddi
 .content {
   margin-top: 100px;
 }
+
+.mobile-only {
+  display: none !important;
+}
+
+@media (max-width: $tablet-bp) {
+  .mobile-only {
+    display: initial;
+  }
+
+  .desktop-only {
+    display: none !important;
+  }
+}

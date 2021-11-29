@@ -1,10 +1,16 @@
 @import "~@/assets/scss/theme.scss";
 
 .navbar {
-  padding: 20px;
+  padding: 20px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  &__logo {
+    @media (max-width: $tablet-bp) {
+      width: 158px;
+    }
+  }
 
   &-wrapper {
     position: fixed;
@@ -16,7 +22,12 @@
 
   &-menu {
     display: flex;
+
     &__item {
+      font-family: Sora, sans-serif;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 23px;
 
       &:not(:last-child) {
         margin-right: 40px;
@@ -24,6 +35,71 @@
 
       &:hover {
         color: $purple-highlight;
+      }
+
+    }
+  }
+
+  &-mobile {
+    padding: 20px 16px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    &-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &-wrapper {
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 11;
+      background: rgba(71, 32, 95, 0.7);
+      backdrop-filter: blur(47px);
+      touch-action: none;
+      transform: translateY(-100%);
+      transition: transform .3s;
+
+      &.opened {
+        transform: translateY(0);
+      }
+    }
+
+    &-menu {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      flex: 1 1 auto;
+
+      &__item {
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 130%;
+        font-family: Sora, sans-serif;
+        padding: 24px 0;
+        text-align: center;
+
+        &:not(:last-child) {
+          margin-bottom: 20px;
+        }
+
+        &:hover {
+          border: solid;
+          border-width: 1px 0 1px 0;
+          border-image-source: linear-gradient(122.03deg, #267CA1 2.26%, #A661FE 95.35%);
+          border-image-slice: 1;
+          color: transparent;
+          background: linear-gradient(122.03deg, #267CA1 2.26%, #A661FE 95.35%);
+          -webkit-background-clip: text;
+        }
       }
     }
   }
