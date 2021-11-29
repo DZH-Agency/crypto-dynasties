@@ -93,7 +93,7 @@ export default {
             {
               rarity: 'Rare',
               img: require('@/assets/img/ShowCase/nft/BNB Rare.png'),
-              traitText: '0.05% have this trait'
+              traitText: '10.00% have this trait'
             },
             {
               rarity: 'Super Rare',
@@ -108,7 +108,7 @@ export default {
             {
               rarity: 'Legendary',
               img: require('@/assets/img/ShowCase/nft/BNB Legendary.png'),
-              traitText: '10.00% have this trait'
+              traitText: '0.05% have this trait'
             }
           ]
         },
@@ -120,7 +120,7 @@ export default {
             {
               rarity: 'Rare',
               img: require('@/assets/img/ShowCase/nft/BTC Rare.png'),
-              traitText: '0.05% have this trait'
+              traitText: '10.00% have this trait'
             },
             {
               rarity: 'Super Rare',
@@ -135,7 +135,7 @@ export default {
             {
               rarity: 'Legendary',
               img: require('@/assets/img/ShowCase/nft/BTC Legendary.png'),
-              traitText: '10.00% have this trait'
+              traitText: '0.05% have this trait'
             }
           ]
         },
@@ -147,7 +147,7 @@ export default {
             {
               rarity: 'Rare',
               img: require('@/assets/img/ShowCase/nft/DOGE Rare.png'),
-              traitText: '0.05% have this trait'
+              traitText: '10.00% have this trait'
             },
             {
               rarity: 'Super Rare',
@@ -162,7 +162,7 @@ export default {
             {
               rarity: 'Legendary',
               img: require('@/assets/img/ShowCase/nft/DOGE Legendary.png'),
-              traitText: '10.00% have this trait'
+              traitText: '0.05% have this trait'
             }
           ]
         },
@@ -174,7 +174,7 @@ export default {
             {
               rarity: 'Rare',
               img: require('@/assets/img/ShowCase/nft/ADA Rare.png'),
-              traitText: '0.05% have this trait'
+              traitText: '10.00% have this trait'
             },
             {
               rarity: 'Super Rare',
@@ -189,7 +189,7 @@ export default {
             {
               rarity: 'Legendary',
               img: require('@/assets/img/ShowCase/nft/ADA Legendary.png'),
-              traitText: '10.00% have this trait'
+              traitText: '0.05% have this trait'
             }
           ]
         },
@@ -201,7 +201,7 @@ export default {
             {
               rarity: 'Rare',
               img: require('@/assets/img/ShowCase/nft/ETH Rare.png'),
-              traitText: '0.05% have this trait'
+              traitText: '10.00% have this trait'
             },
             {
               rarity: 'Super Rare',
@@ -216,7 +216,7 @@ export default {
             {
               rarity: 'Legendary',
               img: require('@/assets/img/ShowCase/nft/ETH Legendary.png'),
-              traitText: '10.00% have this trait'
+              traitText: '0.05% have this trait'
             }
           ]
         },

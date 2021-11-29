@@ -9,14 +9,14 @@
       <div id="about">
         <show-case/>
       </div>
-<!--      <our-mission/>-->
-<!--      <div id="artist">-->
-<!--        <artist-section/>-->
-<!--      </div>-->
-<!--      <div id="faq">-->
-<!--        <questions-section/>-->
-<!--      </div>-->
-<!--      <dont-miss :timer-data="timerData"/>-->
+      <our-mission/>
+      <div id="artist">
+        <artist-section/>
+      </div>
+      <div id="faq">
+        <questions-section/>
+      </div>
+      <dont-miss :timer-data="timerData"/>
     </div>
     <common-footer/>
   </div>
