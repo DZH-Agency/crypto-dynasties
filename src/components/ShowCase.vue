@@ -61,11 +61,11 @@
         <div class="sc-slider-swiper">
           <div class="swiper" ref="swiper">
             <div class="swiper-wrapper">
-              <div class="swiper-slide" v-for="(_, index) in Array(10)" :key="index">
-                <img src="@/assets/img/ShowCase/slider/visor.png" alt="" class="swiper-slide__img">
+              <div class="swiper-slide" v-for="(slide, index) in slides" :key="index">
+                <img :src="slide.img" alt="" class="swiper-slide__img">
                 <div class="swiper-slide-info">
-                  <div class="swiper-slide-info__name">Visor</div>
-                  <div class="swiper-slide-info__rarity">Rarity 1.8%</div>
+                  <div class="swiper-slide-info__name">{{ slide.name }}</div>
+                  <div class="swiper-slide-info__rarity">{{ slide.rarity }}</div>
                 </div>
               </div>
             </div>
@@ -91,165 +91,151 @@ export default {
           graphImg: require('@/assets/img/ShowCase/nft/graphBinance.png'),
           items: [
             {
-              rarity: 'Legendary',
-              img: require('@/assets/img/ShowCase/nft/BitcoinLegendary.png'),
+              rarity: 'Rare',
+              img: require('@/assets/img/ShowCase/nft/BNB Rare.png'),
               traitText: '0.05% have this trait'
             },
             {
               rarity: 'Super Rare',
-              img: require('@/assets/img/ShowCase/nft/BinanceSuperRare.png'),
+              img: require('@/assets/img/ShowCase/nft/BNB Super Rare.png'),
               traitText: '7.50% have this trait'
             },
             {
               rarity: 'Epic',
-              img: require('@/assets/img/ShowCase/nft/DogecoinEpic.png'),
+              img: require('@/assets/img/ShowCase/nft/BNB Epic.png'),
               traitText: '2.45% have this trait'
             },
             {
-              rarity: 'Rare',
-              img: require('@/assets/img/ShowCase/nft/CardanoRare.png'),
+              rarity: 'Legendary',
+              img: require('@/assets/img/ShowCase/nft/BNB Legendary.png'),
               traitText: '10.00% have this trait'
-            },
-            {
-              rarity: 'Rare',
-              img: require('@/assets/img/ShowCase/nft/EthereumRare.png'),
-              traitText: '10.00% have this trait'
-            },
+            }
           ]
         },
         {
-          platformName: 'Binance',
+          platformName: 'Bitcoin',
           currentItemIdx: 0,
           graphImg: require('@/assets/img/ShowCase/nft/graphBinance.png'),
           items: [
             {
-              rarity: 'Legendary',
-              img: require('@/assets/img/ShowCase/nft/BitcoinLegendary.png'),
+              rarity: 'Rare',
+              img: require('@/assets/img/ShowCase/nft/BTC Rare.png'),
               traitText: '0.05% have this trait'
             },
             {
               rarity: 'Super Rare',
-              img: require('@/assets/img/ShowCase/nft/BinanceSuperRare.png'),
+              img: require('@/assets/img/ShowCase/nft/BTC Super Rare.png'),
               traitText: '7.50% have this trait'
             },
             {
               rarity: 'Epic',
-              img: require('@/assets/img/ShowCase/nft/DogecoinEpic.png'),
+              img: require('@/assets/img/ShowCase/nft/BTC Epic.png'),
               traitText: '2.45% have this trait'
             },
             {
-              rarity: 'Rare',
-              img: require('@/assets/img/ShowCase/nft/CardanoRare.png'),
+              rarity: 'Legendary',
+              img: require('@/assets/img/ShowCase/nft/BTC Legendary.png'),
               traitText: '10.00% have this trait'
-            },
-            {
-              rarity: 'Rare',
-              img: require('@/assets/img/ShowCase/nft/EthereumRare.png'),
-              traitText: '10.00% have this trait'
-            },
+            }
           ]
         },
         {
-          platformName: 'Binance',
+          platformName: 'Dogecoin',
           currentItemIdx: 0,
           graphImg: require('@/assets/img/ShowCase/nft/graphBinance.png'),
           items: [
             {
-              rarity: 'Legendary',
-              img: require('@/assets/img/ShowCase/nft/BitcoinLegendary.png'),
+              rarity: 'Rare',
+              img: require('@/assets/img/ShowCase/nft/DOGE Rare.png'),
               traitText: '0.05% have this trait'
             },
             {
               rarity: 'Super Rare',
-              img: require('@/assets/img/ShowCase/nft/BinanceSuperRare.png'),
+              img: require('@/assets/img/ShowCase/nft/DOGE Super Rare.png'),
               traitText: '7.50% have this trait'
             },
             {
               rarity: 'Epic',
-              img: require('@/assets/img/ShowCase/nft/DogecoinEpic.png'),
+              img: require('@/assets/img/ShowCase/nft/DOGE Epic.png'),
               traitText: '2.45% have this trait'
             },
             {
-              rarity: 'Rare',
-              img: require('@/assets/img/ShowCase/nft/CardanoRare.png'),
+              rarity: 'Legendary',
+              img: require('@/assets/img/ShowCase/nft/DOGE Legendary.png'),
               traitText: '10.00% have this trait'
-            },
-            {
-              rarity: 'Rare',
-              img: require('@/assets/img/ShowCase/nft/EthereumRare.png'),
-              traitText: '10.00% have this trait'
-            },
+            }
           ]
         },
         {
-          platformName: 'Binance',
+          platformName: 'Cardano',
           currentItemIdx: 0,
           graphImg: require('@/assets/img/ShowCase/nft/graphBinance.png'),
           items: [
             {
-              rarity: 'Legendary',
-              img: require('@/assets/img/ShowCase/nft/BitcoinLegendary.png'),
+              rarity: 'Rare',
+              img: require('@/assets/img/ShowCase/nft/ADA Rare.png'),
               traitText: '0.05% have this trait'
             },
             {
               rarity: 'Super Rare',
-              img: require('@/assets/img/ShowCase/nft/BinanceSuperRare.png'),
+              img: require('@/assets/img/ShowCase/nft/ADA Super Rare.png'),
               traitText: '7.50% have this trait'
             },
             {
               rarity: 'Epic',
-              img: require('@/assets/img/ShowCase/nft/DogecoinEpic.png'),
+              img: require('@/assets/img/ShowCase/nft/ADA Epic.png'),
               traitText: '2.45% have this trait'
             },
             {
-              rarity: 'Rare',
-              img: require('@/assets/img/ShowCase/nft/CardanoRare.png'),
+              rarity: 'Legendary',
+              img: require('@/assets/img/ShowCase/nft/ADA Legendary.png'),
               traitText: '10.00% have this trait'
-            },
-            {
-              rarity: 'Rare',
-              img: require('@/assets/img/ShowCase/nft/EthereumRare.png'),
-              traitText: '10.00% have this trait'
-            },
+            }
           ]
         },
         {
-          platformName: 'Binance',
+          platformName: 'Ethereum',
           currentItemIdx: 0,
           graphImg: require('@/assets/img/ShowCase/nft/graphBinance.png'),
           items: [
             {
-              rarity: 'Legendary',
-              img: require('@/assets/img/ShowCase/nft/BitcoinLegendary.png'),
+              rarity: 'Rare',
+              img: require('@/assets/img/ShowCase/nft/ETH Rare.png'),
               traitText: '0.05% have this trait'
             },
             {
               rarity: 'Super Rare',
-              img: require('@/assets/img/ShowCase/nft/BinanceSuperRare.png'),
+              img: require('@/assets/img/ShowCase/nft/ETH Super Rare.png'),
               traitText: '7.50% have this trait'
             },
             {
               rarity: 'Epic',
-              img: require('@/assets/img/ShowCase/nft/DogecoinEpic.png'),
+              img: require('@/assets/img/ShowCase/nft/ETH Epic.png'),
               traitText: '2.45% have this trait'
             },
             {
-              rarity: 'Rare',
-              img: require('@/assets/img/ShowCase/nft/CardanoRare.png'),
+              rarity: 'Legendary',
+              img: require('@/assets/img/ShowCase/nft/ETH Legendary.png'),
               traitText: '10.00% have this trait'
-            },
-            {
-              rarity: 'Rare',
-              img: require('@/assets/img/ShowCase/nft/EthereumRare.png'),
-              traitText: '10.00% have this trait'
-            },
+            }
           ]
+        },
+      ],
+      slides: [
+        {
+          img: require('@/assets/img/ShowCase/slider/militaryHat.png'),
+          name: 'Military Hat',
+          rarity: 'Rarity 4.3%',
+        },
+        {
+          img: require('@/assets/img/ShowCase/slider/jacket.png'),
+          name: 'Leather Jacket',
+          rarity: 'Rarity 2.0%',
         },
       ]
     }
   },
   mounted() {
-    console.log('here')
     this.slider = new Swiper(this.$refs.swiper, {
       spaceBetween: 60,
       slidesPerView: 'auto',
