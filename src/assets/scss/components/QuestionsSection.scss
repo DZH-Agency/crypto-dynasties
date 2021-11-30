@@ -5,9 +5,20 @@
           url("~@/assets/img/QuestionsSection/stars.png") no-repeat top 67px right 40px / 72px 66px,
           url("~@/assets/img/QuestionsSection/stars.png") no-repeat bottom left 150px / 72px 66px;
 
+  @media (max-width: $tablet-bp) {
+    background:
+          url("~@/assets/img/QuestionsSection/stars.png") no-repeat top 20% right 40px / 63px 57px,
+          url("~@/assets/img/QuestionsSection/stars.png") no-repeat bottom right 50px / 63px 57px;
+  }
+
   &-wrapper {
     background: url("~@/assets/img/QuestionsSection/curveBgImg.png") no-repeat right top 150px / 166px 371px;
     padding: 100px 0;
+
+    @media (max-width: $tablet-bp) {
+      background: none;
+      padding: 0 0 100px 0;
+    }
   }
 
   &__heading {
@@ -17,32 +28,60 @@
     line-height: 137.4%;
     font-family: Orbitron, sans-serif;
     margin-bottom: 100px;
+
+    @media (max-width: $tablet-bp) {
+      font-size: 24px;
+      margin-bottom: 50px;
+    }
   }
 
   &-questions {
     display: grid;
     grid-row-gap: 100px;
 
+    @media (max-width: $tablet-bp) {
+      grid-row-gap: 50px;
+    }
+
     &-item {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
       grid-column-gap: 40px;
 
+      @media (max-width: $tablet-bp) {
+        grid-template-columns: 1fr;
+        grid-row-gap: 24px;
+      }
+
       &:nth-child(2n) {
         .faq-questions-item__img {
-          order: 0
+          order: 0;
+
+          @media (max-width: $tablet-bp) {
+            order: 2;
+          }
         }
       }
 
       &__img {
+        justify-self: center;
         width: 100%;
+        max-width: 600px;
         grid-column: span 3;
         order: 2;
+
+        @media (max-width: $tablet-bp) {
+          grid-column: initial;
+        }
       }
 
       &-content {
         grid-column: span 9;
         order: 1;
+
+        @media (max-width: $tablet-bp) {
+          grid-column: initial;
+        }
 
         &__question {
           margin-bottom: 24px;
@@ -51,12 +90,20 @@
           line-height: 137.4%;
           font-family: Orbitron, sans-serif;
           color: $purple-highlight;
+
+          @media (max-width: $tablet-bp) {
+            font-size: 18px;
+          }
         }
 
         &__answer {
           font-weight: bold;
           font-size: 18px;
           line-height: 130%;
+
+          @media (max-width: $tablet-bp) {
+            font-size: 14px;
+          }
         }
       }
     }
