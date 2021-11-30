@@ -14,6 +14,7 @@
             Our story begins with the first CryptoDynasty to ever set foot on Earth - The Bitcoin Dynasty. Historical archives show that its first member was born on January 3rd, 2009. Since then a lot of dynasties have risen and fallen, leaving the most adaptable and powerful to lead the way from a $460 billion USD to $2.8 trillion USD global market cap just last year alone. Researchers studying the dynasties have said that only 11% of people within the United States are proven successors of any dynasty alive today, proving how early this chapter of Earth's history actually is.
           </div>
           <picture>
+            <source srcset="@/assets/img/YoungCrypto/youngGraphMobile.png" media="(max-width: 765px)">
             <img src="@/assets/img/YoungCrypto/graph.png" alt="graph" class="young-content__graph">
           </picture>
           <div class="young-content-goal">
