@@ -1,16 +1,23 @@
 @import "~@/assets/scss/theme.scss";
 
 .footer {
+  font-family: Sora, sans-serif;
   text-align: center;
   font-size: 18px;
   line-height: 24px;
 
   @media (max-width: $tablet-bp) {
     white-space: pre-wrap;
+    font-size: 12px;
+    line-height: 15px;
   }
 
   &-wrapper {
     background: $black-secondary;
     padding: 50px 0;
+
+    @media (max-width: $tablet-bp) {
+      background: none;
+    }
   }
 }
