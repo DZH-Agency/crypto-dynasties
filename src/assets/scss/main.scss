@@ -6,6 +6,10 @@ $container-horizontal-padding: 16px;
 $container-vertical-padding: 0;
 $container-padding: #{$container-vertical-padding} #{$container-horizontal-padding};
 
+html, body, #app {
+  overflow-x: hidden;
+}
+
 #app {
   height: 100%;
   display: flex;

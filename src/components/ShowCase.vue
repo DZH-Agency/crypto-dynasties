@@ -1,7 +1,11 @@
 <template>
   <div class="sc-wrapper">
     <div class="container">
-      <img src="@/assets/img/ShowCase/bgCurveLine.png" alt="bg-img" class="sc__bg-curve-line-img">
+      <picture>
+        <source srcset="@/assets/img/ShowCase/bgCurveLine.png" media="(min-width: 1024px)">
+        <img src="@/assets/img/ShowCase/bgCurveMobile.png" alt="bg-img" class="sc__bg-curve-line-img">
+      </picture>
+
       <img src="@/assets/img/ShowCase/bgSliderCurve.png" alt="bg-img" class="sc__bg-slider-curve-img">
       <div class="sc">
         <img src="@/assets/img/ShowCase/bgSmallStar.png" alt="bg-img" class="sc__bg-small-star-img desktop-only">
@@ -12,31 +16,40 @@
           months of brainstorming sessions and careful craftsmanship to give form to some of the biggest CryptoDynasties
           leading the revolution today: Bitcoin, Ethereum, Binance Coin, Cardano and Dogecoin.
         </p>
-        <div class="sc-images-wrapper">
-          <div class="sc-images">
-            <div class="sc-images-item" v-for="(nft, index) in nfts" :key="index">
-              <div class="sc-images-item__img">
-                <img :src="nft.items[nft.currentItemIdx].img" alt="img">
-              </div>
-              <div class="sc-images-item-content">
-                <div class="sc-images-item-controls">
-                  <div
-                      class="control-arrow control-arrow_left sc-images-item-controls__arrow"
-                      :class="{disabled: nft.currentItemIdx === 0}"
-                      @click="prevImage(nft)"
-                  />
-                  <div class="sc-images-item-controls__name">{{ nft.platformName }}</div>
-                  <div
-                      class="control-arrow control-arrow_right sc-images-item-controls__arrow"
-                      :class="{disabled: nft.currentItemIdx >= nft.items.length - 1}"
-                      @click="nextImage(nft)"
-                  />
+        <div class="sc-images-controls mobile-only">
+          <div class="control-arrow control-arrow_left" ref="prevBaseBtn" :class="{disabled: !allowSlides.prev}"></div>
+          <div class="sc-images-controls__name">{{ currentBaseSlidePlatform }}</div>
+          <div class="control-arrow control-arrow_right" ref="nextBaseBtn" :class="{disabled: !allowSlides.next}"></div>
+        </div>
+        <div class="sc-images-wrapper swiper" ref="imagesSwiper">
+          <div class="sc-images swiper-wrapper">
+            <div class="sc-images-item swiper-slide" v-for="(nft, index) in nfts" :key="index">
+              <div class="sc-images-item-box">
+                <div class="sc-images-item__img">
+                  <img :src="nft.items[nft.currentItemIdx].img" alt="img">
                 </div>
-                <div class="sc-images-item-info">
-                  <div class="sc-images-item-info__rarity">{{ nft.items[nft.currentItemIdx].rarity }}</div>
-                  <div class="sc-images-item-info__percent">{{ nft.items[nft.currentItemIdx].traitText }}</div>
+                <div class="sc-images-item-content">
+                  <div class="sc-images-item-controls">
+                    <div
+                        class="control-arrow control-arrow_left sc-images-item-controls__arrow"
+                        :class="{disabled: nft.currentItemIdx === 0}"
+                        @click="prevImage(nft)"
+                    />
+                    <div class="sc-images-item-controls__name">
+                      {{ isMobile ? 'Base type' : nft.platformName }}
+                    </div>
+                    <div
+                        class="control-arrow control-arrow_right sc-images-item-controls__arrow"
+                        :class="{disabled: nft.currentItemIdx >= nft.items.length - 1}"
+                        @click="nextImage(nft)"
+                    />
+                  </div>
+                  <div class="sc-images-item-info">
+                    <div class="sc-images-item-info__rarity">{{ nft.items[nft.currentItemIdx].rarity }}</div>
+                    <div class="sc-images-item-info__percent">{{ nft.items[nft.currentItemIdx].traitText }}</div>
+                  </div>
+                  <img :src="nft.graphImg" alt="graph" class="sc-images-item__graph"/>
                 </div>
-                <img :src="nft.graphImg" alt="graph" class="sc-images-item__graph"/>
               </div>
             </div>
           </div>
@@ -78,11 +91,14 @@
 
 <script>
 import Swiper from 'swiper';
+import Bowser from 'bowser';
 
 export default {
   name: "ShowCase",
   data() {
     return {
+      currentBaseSlideIdx: 0,
+      browser: Bowser.getParser(window.navigator.userAgent),
       slider: null,
       nfts: [
         {
@@ -223,34 +239,109 @@ export default {
       ],
       slides: [
         {
-          img: require('@/assets/img/ShowCase/slider/militaryHat.png'),
-          name: 'Military Hat',
-          rarity: 'Rarity 4.3%',
+          img: require('@/assets/img/ShowCase/slider/Big Jacket.png'),
+          name: 'Big Jacket',
+          rarity: 'Rarity 1.5%',
         },
         {
-          img: require('@/assets/img/ShowCase/slider/jacket.png'),
-          name: 'Leather Jacket',
+          img: require('@/assets/img/ShowCase/slider/Devil Horns.png'),
+          name: 'Devil Horns',
+          rarity: 'Rarity 0.8%',
+        },
+        {
+          img: require('@/assets/img/ShowCase/slider/Spikes Choker.png'),
+          name: 'Spikes Choker',
           rarity: 'Rarity 2.0%',
         },
-      ]
+        {
+          img: require('@/assets/img/ShowCase/slider/Neon Mask.png'),
+          name: 'Neon Mask',
+          rarity: 'Rarity 2.8%',
+        },
+        {
+          img: require('@/assets/img/ShowCase/slider/BTC Earring.png'),
+          name: 'BTC Earring',
+          rarity: 'Rarity 0.4%',
+        },
+        {
+          img: require('@/assets/img/ShowCase/slider/VR Glasses.png'),
+          name: 'VR Glasses',
+          rarity: 'Rarity 2.5%',
+        },
+        {
+          img: require('@/assets/img/ShowCase/slider/Basketball Jersey.png'),
+          name: 'Basketball Jersey',
+          rarity: 'Rarity 3.8%',
+        },
+        {
+          img: require('@/assets/img/ShowCase/slider/Headphones.png'),
+          name: 'Headphones',
+          rarity: 'Rarity 3.5%',
+        },
+        {
+          img: require('@/assets/img/ShowCase/slider/ETH Chain.png'),
+          name: 'ETH Chain',
+          rarity: 'Rarity 0.6%',
+        },
+        {
+          img: require('@/assets/img/ShowCase/slider/Surgical Mask.png'),
+          name: 'Surgical Mask',
+          rarity: 'Rarity 6.0%',
+        },
+        {
+          img: require('@/assets/img/ShowCase/slider/Futuristic Glasses.png'),
+          name: 'Futuristic Glasses',
+          rarity: 'Rarity 3.8%',
+        },
+        {
+          img: require('@/assets/img/ShowCase/slider/ADA Earring.png'),
+          name: 'ADA Earring',
+          rarity: 'Rarity 0.4%',
+        }
+      ],
+      baseTypeSlider: null,
     }
   },
   mounted() {
     this.slider = new Swiper(this.$refs.swiper, {
-      spaceBetween: 60,
+      spaceBetween: 36,
       slidesPerView: 'auto',
+      centeredSlides: false,
       loop: true,
     })
 
-    this.$refs.nextBtn.addEventListener('click', this.handleNextSlide)
-    this.$refs.prevBtn.addEventListener('click', this.handlePrevSlide)
+    this.$refs.nextBtn.addEventListener('click', () => this.handleNextSlide(this.slider))
+    this.$refs.prevBtn.addEventListener('click', () => this.handlePrevSlide(this.slider))
+
+    if (this.isMobile) {
+      this.baseTypeSlider = new Swiper(this.$refs.imagesSwiper, {
+        slidesPerView: 1,
+        spaceBetween: 48,
+        centeredSlides: true,
+        breakpoints: {
+          720: {
+            slidesPerView: 2,
+          },
+          1100: {
+            slidesPerView: 3,
+          },
+        }
+      })
+
+      this.baseTypeSlider.on('activeIndexChange', (swiper) => {
+        this.currentBaseSlideIdx = swiper.activeIndex
+      })
+
+      this.$refs.nextBaseBtn.addEventListener('click', () => this.handleNextSlide(this.baseTypeSlider))
+      this.$refs.prevBaseBtn.addEventListener('click', () => this.handlePrevSlide(this.baseTypeSlider))
+    }
   },
   methods: {
-    handleNextSlide() {
-      this.slider.slideNext()
+    handleNextSlide(slider) {
+      slider.slideNext()
     },
-    handlePrevSlide() {
-      this.slider.slidePrev()
+    handlePrevSlide(slider) {
+      slider.slidePrev()
     },
     prevImage(nft) {
       if (nft.currentItemIdx === 0) {
@@ -266,6 +357,20 @@ export default {
 
       nft.currentItemIdx++;
     },
+  },
+  computed: {
+    isMobile() {
+      return this.browser.getPlatform()?.type === 'mobile'
+    },
+    currentBaseSlidePlatform() {
+      return this.nfts[this.currentBaseSlideIdx]?.platformName ?? '...'
+    },
+    allowSlides() {
+      return {
+        prev: this.currentBaseSlideIdx > 0,
+        next: this.currentBaseSlideIdx < this.nfts.length - 1,
+      }
+    }
   },
   beforeDestroy() {
     this.$refs.nextBtn.removeEventListener('click', this.handleNextSlide)
