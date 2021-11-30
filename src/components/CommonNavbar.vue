@@ -14,7 +14,7 @@
               {{ item.title }}
             </a>
           </div>
-          <img @click="isOpened = !isOpened" src="@/assets/img/menuIcon.png" alt="open">
+          <img @click="isOpened = !isOpened" src="@/assets/img/menuIcon.png" alt="open" class="mobile-only">
         </div>
       </div>
     </div>
