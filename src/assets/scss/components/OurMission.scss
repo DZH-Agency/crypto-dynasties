@@ -5,6 +5,10 @@
   &-wrapper {
     padding: 100px 0;
     background: url("~@/assets/img/OurMission/mainBg.png") no-repeat center / cover;
+
+    @media (max-width: $tablet-bp) {
+
+    }
   }
 
   &__heading {
@@ -15,16 +19,29 @@
     text-align: center;
     margin-bottom: 100px;
     color: $purple-highlight;
+
+    @media (max-width: $tablet-bp) {
+      font-size: 24px;
+      margin-bottom: 50px;
+    }
   }
 
   &-text-box {
     display: grid;
     grid-row-gap: 24px;
 
+    @media (max-width: $tablet-bp) {
+      grid-row-gap: 20px;
+    }
+
     p {
       font-weight: bold;
       font-size: 20px;
       line-height: 170%;
+
+      @media (max-width: $tablet-bp) {
+        font-size: 16px;
+      }
 
       strong {
         font-family: Orbitron, sans-serif;
