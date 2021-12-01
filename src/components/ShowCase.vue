@@ -239,38 +239,23 @@ export default {
       ],
       slides: [
         {
-          img: require('@/assets/img/ShowCase/slider/Big Jacket.png'),
-          name: 'Big Jacket',
-          rarity: 'Rarity 1.5%',
+          img: require('@/assets/img/ShowCase/slider/Bomber Jacket College.png'),
+          name: 'Bomber Jacket College',
+          rarity: 'Rarity 3.0%',
         },
         {
-          img: require('@/assets/img/ShowCase/slider/Devil Horns.png'),
-          name: 'Devil Horns',
-          rarity: 'Rarity 0.8%',
+          img: require('@/assets/img/ShowCase/slider/Bucket Hat.png'),
+          name: 'Bucket Hat',
+          rarity: 'Rarity 4.0%',
         },
         {
-          img: require('@/assets/img/ShowCase/slider/Spikes Choker.png'),
-          name: 'Spikes Choker',
-          rarity: 'Rarity 2.0%',
+          img: require('@/assets/img/ShowCase/slider/Crown.png'),
+          name: 'Crown',
+          rarity: 'Rarity 2.3%',
         },
         {
-          img: require('@/assets/img/ShowCase/slider/Neon Mask.png'),
-          name: 'Neon Mask',
-          rarity: 'Rarity 2.8%',
-        },
-        {
-          img: require('@/assets/img/ShowCase/slider/BTC Earring.png'),
-          name: 'BTC Earring',
-          rarity: 'Rarity 0.4%',
-        },
-        {
-          img: require('@/assets/img/ShowCase/slider/VR Glasses.png'),
-          name: 'VR Glasses',
-          rarity: 'Rarity 2.5%',
-        },
-        {
-          img: require('@/assets/img/ShowCase/slider/Basketball Jersey.png'),
-          name: 'Basketball Jersey',
+          img: require('@/assets/img/ShowCase/slider/Futuristic Glasses.png'),
+          name: 'Futuristic Glasses',
           rarity: 'Rarity 3.8%',
         },
         {
@@ -279,25 +264,30 @@ export default {
           rarity: 'Rarity 3.5%',
         },
         {
-          img: require('@/assets/img/ShowCase/slider/ETH Chain.png'),
-          name: 'ETH Chain',
-          rarity: 'Rarity 0.6%',
+          img: require('@/assets/img/ShowCase/slider/Leather Jacket.png'),
+          name: 'Leather Jacket',
+          rarity: 'Rarity 2.0%',
         },
         {
-          img: require('@/assets/img/ShowCase/slider/Surgical Mask.png'),
-          name: 'Surgical Mask',
-          rarity: 'Rarity 6.0%',
+          img: require('@/assets/img/ShowCase/slider/Racer Helmet.png'),
+          name: 'Racer Helmet',
+          rarity: 'Rarity 2.0%',
         },
         {
-          img: require('@/assets/img/ShowCase/slider/Futuristic Glasses.png'),
-          name: 'Futuristic Glasses',
-          rarity: 'Rarity 3.8%',
+          img: require('@/assets/img/ShowCase/slider/Shark Chain.png'),
+          name: 'Shark Chain',
+          rarity: 'Rarity 1.3%',
         },
         {
-          img: require('@/assets/img/ShowCase/slider/ADA Earring.png'),
-          name: 'ADA Earring',
-          rarity: 'Rarity 0.4%',
-        }
+          img: require('@/assets/img/ShowCase/slider/Vest.png'),
+          name: 'Vest',
+          rarity: 'Rarity 2.5%',
+        },
+        {
+          img: require('@/assets/img/ShowCase/slider/VR Glasses.png'),
+          name: 'VR Glasses',
+          rarity: 'Rarity 2.5%',
+        },
       ],
       baseTypeSlider: null,
     }
