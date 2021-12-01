@@ -108,22 +108,22 @@ export default {
           items: [
             {
               rarity: 'Rare',
-              img: require('@/assets/img/ShowCase/nft/BNB Rare.png'),
+              img: require('@/assets/img/ShowCase/nft/BNB Rare Small.png'),
               traitText: '10.00% have this trait'
             },
             {
               rarity: 'Super Rare',
-              img: require('@/assets/img/ShowCase/nft/BNB Super Rare.png'),
+              img: require('@/assets/img/ShowCase/nft/BNB Super Rare Small.png'),
               traitText: '7.50% have this trait'
             },
             {
               rarity: 'Epic',
-              img: require('@/assets/img/ShowCase/nft/BNB Epic.png'),
+              img: require('@/assets/img/ShowCase/nft/BNB Epic Small.png'),
               traitText: '2.45% have this trait'
             },
             {
               rarity: 'Legendary',
-              img: require('@/assets/img/ShowCase/nft/BNB Legendary.png'),
+              img: require('@/assets/img/ShowCase/nft/BNB Legendary Small.png'),
               traitText: '0.05% have this trait'
             }
           ]
@@ -135,22 +135,22 @@ export default {
           items: [
             {
               rarity: 'Rare',
-              img: require('@/assets/img/ShowCase/nft/BTC Rare.png'),
+              img: require('@/assets/img/ShowCase/nft/BTC Rare Small.png'),
               traitText: '10.00% have this trait'
             },
             {
               rarity: 'Super Rare',
-              img: require('@/assets/img/ShowCase/nft/BTC Super Rare.png'),
+              img: require('@/assets/img/ShowCase/nft/BTC Super Rare Small.png'),
               traitText: '7.50% have this trait'
             },
             {
               rarity: 'Epic',
-              img: require('@/assets/img/ShowCase/nft/BTC Epic.png'),
+              img: require('@/assets/img/ShowCase/nft/BTC Epic Small.png'),
               traitText: '2.45% have this trait'
             },
             {
               rarity: 'Legendary',
-              img: require('@/assets/img/ShowCase/nft/BTC Legendary.png'),
+              img: require('@/assets/img/ShowCase/nft/BTC Legendary Small.png'),
               traitText: '0.05% have this trait'
             }
           ]
@@ -162,22 +162,22 @@ export default {
           items: [
             {
               rarity: 'Rare',
-              img: require('@/assets/img/ShowCase/nft/DOGE Rare.png'),
+              img: require('@/assets/img/ShowCase/nft/DOGE Rare Small.png'),
               traitText: '10.00% have this trait'
             },
             {
               rarity: 'Super Rare',
-              img: require('@/assets/img/ShowCase/nft/DOGE Super Rare.png'),
+              img: require('@/assets/img/ShowCase/nft/DOGE Super Rare Small.png'),
               traitText: '7.50% have this trait'
             },
             {
               rarity: 'Epic',
-              img: require('@/assets/img/ShowCase/nft/DOGE Epic.png'),
+              img: require('@/assets/img/ShowCase/nft/DOGE Epic Small.png'),
               traitText: '2.45% have this trait'
             },
             {
               rarity: 'Legendary',
-              img: require('@/assets/img/ShowCase/nft/DOGE Legendary.png'),
+              img: require('@/assets/img/ShowCase/nft/DOGE Legendary Small.png'),
               traitText: '0.05% have this trait'
             }
           ]
@@ -189,22 +189,22 @@ export default {
           items: [
             {
               rarity: 'Rare',
-              img: require('@/assets/img/ShowCase/nft/ADA Rare.png'),
+              img: require('@/assets/img/ShowCase/nft/ADA Rare Small.png'),
               traitText: '10.00% have this trait'
             },
             {
               rarity: 'Super Rare',
-              img: require('@/assets/img/ShowCase/nft/ADA Super Rare.png'),
+              img: require('@/assets/img/ShowCase/nft/ADA Super Rare Small.png'),
               traitText: '7.50% have this trait'
             },
             {
               rarity: 'Epic',
-              img: require('@/assets/img/ShowCase/nft/ADA Epic.png'),
+              img: require('@/assets/img/ShowCase/nft/ADA Epic Small.png'),
               traitText: '2.45% have this trait'
             },
             {
               rarity: 'Legendary',
-              img: require('@/assets/img/ShowCase/nft/ADA Legendary.png'),
+              img: require('@/assets/img/ShowCase/nft/ADA Legendary Small.png'),
               traitText: '0.05% have this trait'
             }
           ]
@@ -216,22 +216,22 @@ export default {
           items: [
             {
               rarity: 'Rare',
-              img: require('@/assets/img/ShowCase/nft/ETH Rare.png'),
+              img: require('@/assets/img/ShowCase/nft/ETH Rare Small.png'),
               traitText: '10.00% have this trait'
             },
             {
               rarity: 'Super Rare',
-              img: require('@/assets/img/ShowCase/nft/ETH Super Rare.png'),
+              img: require('@/assets/img/ShowCase/nft/ETH Super Rare Small.png'),
               traitText: '7.50% have this trait'
             },
             {
               rarity: 'Epic',
-              img: require('@/assets/img/ShowCase/nft/ETH Epic.png'),
+              img: require('@/assets/img/ShowCase/nft/ETH Epic Small.png'),
               traitText: '2.45% have this trait'
             },
             {
               rarity: 'Legendary',
-              img: require('@/assets/img/ShowCase/nft/ETH Legendary.png'),
+              img: require('@/assets/img/ShowCase/nft/ETH Legendary Small.png'),
               traitText: '0.05% have this trait'
             }
           ]
