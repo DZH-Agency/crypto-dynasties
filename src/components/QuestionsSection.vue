@@ -37,7 +37,7 @@ export default {
               'The rarest traits have the lowest % chance of being found among the collection and each trait has a corresponding rarity score.\n' +
               'The sum of all the trait scores of one CryptoDynasties NFT marks the total score for the character in our overall Ranking Table.\n' +
               'Note: no two NFTs are exactly alike, and each one of them can be officially owned by a single person on the blockchain.',
-          img: require('@/assets/img/QuestionsSection/q1Img.png')
+          img: require('@/assets/img/QuestionsSection/q1img.png')
         },
         {
           question: 'How can I get a "CryptoDynasties" NFT?',
@@ -45,12 +45,12 @@ export default {
               'To navigate to the Featured Drop simply click on "View Drop" in the first section of this page. \n' +
               'Once the timer runs out on Crypto.com website, simply refresh the page and grab your collectible!\n' +
               'The Featured drop will happen via Mystery Packs. Each pack has a fixed fee and contains 1 random character from the CryptoDynasties collection.',
-          img: require('@/assets/img/QuestionsSection/q2Img.png')
+          img: require('@/assets/img/QuestionsSection/q2img.png')
         },
         {
           question: 'My favorite coin is not in this collection. Are you launching a sequel to the "CryptoDynasties" collection in the future?',
           answer: 'We are sorry to hear that. Let us know which cryptocurrency you\'d like to see in the sequel of this project by filling in this form. Once we have enough votes, the most requested 5 coins will make up the second collection!',
-          img: require('@/assets/img/QuestionsSection/q3Img.png')
+          img: require('@/assets/img/QuestionsSection/q3img.png')
         },
       ]
     }

@@ -217,6 +217,7 @@
         overflow: hidden;
         background: $black content-box;
         padding: 5px;
+        display: flex;
 
         &::after {
           content: "";
