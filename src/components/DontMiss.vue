@@ -12,7 +12,7 @@
             </div>
             <div class="miss-counter__exclusively">
               Exclusively on
-              <a href="#">
+              <a href="https://crypto.com" target="_blank">
                 <img src="@/assets/img/CommonHeader/crypto-com.png" alt="crypto-com">
               </a>
             </div>
