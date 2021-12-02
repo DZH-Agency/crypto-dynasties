@@ -298,6 +298,11 @@ export default {
       slidesPerView: 'auto',
       centeredSlides: false,
       loop: true,
+      breakpoints: {
+        1024: {
+          slidesPerView: 2,
+        }
+      }
     })
 
     this.$refs.nextBtn.addEventListener('click', () => this.handleNextSlide(this.slider))
