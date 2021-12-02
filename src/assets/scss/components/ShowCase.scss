@@ -90,10 +90,14 @@
     }
 
     &-controls {
-      display: flex;
+      display: none;
       align-items: center;
       justify-content: space-between;
       margin-bottom: 32px;
+
+      @media (max-width: $tablet-bp) {
+        display: flex;
+      }
 
       &__name {
         font-weight: bold;

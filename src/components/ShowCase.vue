@@ -16,7 +16,7 @@
           months of brainstorming sessions and careful craftsmanship to give form to some of the biggest CryptoDynasties
           leading the revolution today: Bitcoin, Ethereum, Binance Coin, Cardano and Dogecoin.
         </p>
-        <div class="sc-images-controls mobile-only">
+        <div class="sc-images-controls">
           <div class="control-arrow control-arrow_left" ref="prevBaseBtn" :class="{disabled: !allowSlides.prev}"></div>
           <div class="sc-images-controls__name">{{ currentBaseSlidePlatform }}</div>
           <div class="control-arrow control-arrow_right" ref="nextBaseBtn" :class="{disabled: !allowSlides.next}"></div>
