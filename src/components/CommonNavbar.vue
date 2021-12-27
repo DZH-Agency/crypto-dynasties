@@ -4,17 +4,27 @@
       <div class="container">
         <div class="navbar">
           <img src="@/assets/img/CommonNavbar/Logo.png" alt="logo" class="navbar__logo">
-          <div class="navbar-menu desktop-only">
-            <a
-                class="navbar-menu__item"
-                v-for="(item, index) in navbarItems"
-                :key="index"
-                :href="item.link"
-            >
-              {{ item.title }}
-            </a>
+          <div class="navbar-right">
+            <div class="navbar-menu desktop-only">
+              <a
+                  class="navbar-menu__item"
+                  v-for="(item, index) in navbarItems"
+                  :key="index"
+                  :href="item.link"
+              >
+                {{ item.title }}
+              </a>
+            </div>
+            <div class="navbar-social">
+              <a href="#" target="_blank" class="navbar-social__item">
+                <img src="@/assets/img/CommonNavbar/Discord.png" alt="">
+              </a>
+              <a href="#" target="_blank" class="navbar-social__item">
+                <img src="@/assets/img/CommonNavbar/Twitter.png" alt="">
+              </a>
+            </div>
+            <img @click="isOpened = !isOpened" src="@/assets/img/menuIcon.png" alt="open" class="navbar__burger mobile-only">
           </div>
-          <img @click="isOpened = !isOpened" src="@/assets/img/menuIcon.png" alt="open" class="mobile-only">
         </div>
       </div>
     </div>

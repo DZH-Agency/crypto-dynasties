@@ -12,12 +12,41 @@
     }
   }
 
+  &__burger {
+    cursor: pointer;
+  }
+
   &-wrapper {
     position: fixed;
     top: 0;
     width: 100%;
     backdrop-filter: blur(5px);
     z-index: 10;
+  }
+
+  &-right {
+    display: flex;
+    align-items: center;
+  }
+
+  &-social {
+    margin-left: 60px;
+    display: flex;
+    align-items: center;
+
+    @media (max-width: $tablet-bp) {
+      margin-left: 0;
+      margin-right: 24px;
+    }
+
+    &__item {
+      &:not(:last-child) {
+        margin-right: 20px;
+        @media (max-width: $tablet-bp) {
+          margin-right: 24px;
+        }
+      }
+    }
   }
 
   &-menu {

@@ -33,17 +33,17 @@ export default {
       questions: [
         {
           question: 'What is a "CryptoDynasties" NFT?',
-          answer: 'CryptoDynasties collection consists of 10,000 randomly generated and unique 3D characters created from 96 different traits: 20 base types and 76 accessory traits with different levels of rarity.\n' +
-              'The rarest traits have the lowest % chance of being found among the collection and each trait has a corresponding rarity score.\n' +
-              'The sum of all the trait scores of one CryptoDynasties NFT marks the total score for the character in our overall Ranking Table.\n' +
+          answer: 'CryptoDynasties collection consists of 10,000 randomly generated and unique 3D characters created from 96 different traits: 25 base types and 75 accessory traits with different levels of rarity.\n\n' +
+              'The rarest traits have the lowest % chance of being found among the collection and each trait has a corresponding rarity score.\n\n' +
+              'The sum of all the trait scores of one CryptoDynasties NFT marks the total score for the character in our overall Ranking Table.\n\n' +
               'Note: no two NFTs are exactly alike, and each one of them can be officially owned by a single person on the blockchain.',
           img: require('@/assets/img/QuestionsSection/q1img.png')
         },
         {
           question: 'How can I get a "CryptoDynasties" NFT?',
-          answer: 'CryptoDynasties NFTs can be exclusively purchased on crypto.com platform. The featured drop will take place once the timer on this page runs out.\n' +
-              'To navigate to the Featured Drop simply click on "View Drop" in the first section of this page. \n' +
-              'Once the timer runs out on Crypto.com website, simply refresh the page and grab your collectible!\n' +
+          answer: 'CryptoDynasties NFTs can be exclusively purchased on crypto.com platform. The featured drop will take place once the timer on this page runs out.\n\n' +
+              'To navigate to the Featured Drop simply click on "View Drop" in the first section of this page. \n\n' +
+              'Once the timer runs out on Crypto.com website, simply refresh the page and grab your collectible!\n\n' +
               'The Featured drop will happen via Mystery Packs. Each pack has a fixed fee and contains 1 random character from the CryptoDynasties collection.',
           img: require('@/assets/img/QuestionsSection/q2img.png')
         },

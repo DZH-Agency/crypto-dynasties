@@ -55,7 +55,7 @@ export default {
         minutes: '00',
         seconds: '00'
       },
-      targetDate: new Date(2021, 11, 20, 0, 0, 0, 0),
+      targetDate: new Date(2022, 0, 20, 0, 0, 0, 0),
       diffInSeconds: null
     }
   },
