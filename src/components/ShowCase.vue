@@ -318,6 +318,7 @@ export default {
     }
   },
   mounted() {
+    console.log('123')
     this.slider = new Swiper(this.$refs.swiper, {
       spaceBetween: 36,
       slidesPerView: 'auto',
@@ -332,7 +333,7 @@ export default {
 
     this.$refs.nextBtn.addEventListener('click', () => this.handleNextSlide(this.slider))
     this.$refs.prevBtn.addEventListener('click', () => this.handlePrevSlide(this.slider))
-
+  
     if (this.isMobile) {
       this.baseTypeSlider = new Swiper(this.$refs.imagesSwiper, {
         slidesPerView: 1,
@@ -354,9 +355,9 @@ export default {
 
       this.$refs.nextBaseBtn.addEventListener('click', () => this.handleNextSlide(this.baseTypeSlider))
       this.$refs.prevBaseBtn.addEventListener('click', () => this.handlePrevSlide(this.baseTypeSlider))
-      
-      this._preloadNftBases()
+  
     }
+    this._preloadNftBases()
   },
   methods: {
     handleNextSlide(slider) {
@@ -392,7 +393,8 @@ export default {
       ]
   
       preloadImagesSources.forEach(imgSrc => {
-        (new Image()).src = imgSrc
+        console.log('here');
+        (new Image()).src = imgSrc;
       })
     },
     handlePrevSlide(slider) {
