@@ -354,11 +354,46 @@ export default {
 
       this.$refs.nextBaseBtn.addEventListener('click', () => this.handleNextSlide(this.baseTypeSlider))
       this.$refs.prevBaseBtn.addEventListener('click', () => this.handlePrevSlide(this.baseTypeSlider))
+      
+      this._preloadNftBases()
     }
   },
   methods: {
     handleNextSlide(slider) {
       slider.slideNext()
+    },
+    _preloadNftBases() {
+      const preloadImagesSources = [
+        require('@/assets/img/ShowCase/nft/BNB Rare.png'),
+        require('@/assets/img/ShowCase/nft/BNB Super Rare.png'),
+        require('@/assets/img/ShowCase/nft/BNB Epic.png'),
+        require('@/assets/img/ShowCase/nft/BNB Legendary.png'),
+        require('@/assets/img/ShowCase/nft/BNB Mythic.png'),
+        require('@/assets/img/ShowCase/nft/BTC Rare.png'),
+        require('@/assets/img/ShowCase/nft/BTC Super Rare.png'),
+        require('@/assets/img/ShowCase/nft/BTC Epic.png'),
+        require('@/assets/img/ShowCase/nft/BTC Legendary.png'),
+        require('@/assets/img/ShowCase/nft/BTC Mythic.png'),
+        require('@/assets/img/ShowCase/nft/DOGE Rare.png'),
+        require('@/assets/img/ShowCase/nft/DOGE Super Rare.png'),
+        require('@/assets/img/ShowCase/nft/DOGE Epic.png'),
+        require('@/assets/img/ShowCase/nft/DOGE Legendary.png'),
+        require('@/assets/img/ShowCase/nft/DOGE Mythic.png'),
+        require('@/assets/img/ShowCase/nft/ADA Rare.png'),
+        require('@/assets/img/ShowCase/nft/ADA Super Rare.png'),
+        require('@/assets/img/ShowCase/nft/ADA Epic.png'),
+        require('@/assets/img/ShowCase/nft/ADA Legendary.png'),
+        require('@/assets/img/ShowCase/nft/ADA Mythic.png'),
+        require('@/assets/img/ShowCase/nft/ETH Rare.png'),
+        require('@/assets/img/ShowCase/nft/ETH Super Rare.png'),
+        require('@/assets/img/ShowCase/nft/ETH Epic.png'),
+        require('@/assets/img/ShowCase/nft/ETH Legendary.png'),
+        require('@/assets/img/ShowCase/nft/ETH Mythic.png')
+      ]
+  
+      preloadImagesSources.forEach(imgSrc => {
+        (new Image()).src = imgSrc
+      })
     },
     handlePrevSlide(slider) {
       slider.slidePrev()
