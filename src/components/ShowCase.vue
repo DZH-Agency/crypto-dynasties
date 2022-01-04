@@ -125,7 +125,6 @@ export default {
     ]
   
     preloadImagesSources.forEach(imgSrc => {
-      console.log('here');
       (new Image()).src = imgSrc;
     })
     
