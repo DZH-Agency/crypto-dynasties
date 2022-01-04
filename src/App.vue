@@ -9,7 +9,9 @@
       <div id="about">
         <show-case/>
       </div>
-      <our-mission/>
+      <div id="utility">
+        <our-mission/>
+      </div>
       <div id="artist">
         <artist-section/>
       </div>

@@ -70,6 +70,10 @@ export default {
           link: '#about'
         },
         {
+          title: 'Utility',
+          link: '#utility'
+        },
+        {
           title: 'Artist',
           link: '#artist'
         },

@@ -33,7 +33,7 @@ export default {
       questions: [
         {
           question: 'What is a "CryptoDynasties" NFT?',
-          answer: 'CryptoDynasties collection consists of 10,000 randomly generated and unique 3D characters created from 96 different traits: 25 base types and 75 accessory traits with different levels of rarity.\n\n' +
+          answer: 'CryptoDynasties collection consists of 10,000 randomly generated and unique 3D characters created from 100 different traits: 25 base types and 75 accessory traits with different levels of rarity.\n\n' +
               'The rarest traits have the lowest % chance of being found among the collection and each trait has a corresponding rarity score.\n\n' +
               'The sum of all the trait scores of one CryptoDynasties NFT marks the total score for the character in our overall Ranking Table.\n\n' +
               'Note: no two NFTs are exactly alike, and each one of them can be officially owned by a single person on the blockchain.',
