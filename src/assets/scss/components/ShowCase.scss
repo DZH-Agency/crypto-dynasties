@@ -421,15 +421,11 @@
 
         }
 
-        &__arrow {
-          background-color: $white;
+        &__arrow.control-arrow {
+          background-color: $purple-highlight;
 
           @media (max-width: $tablet-bp) {
 
-          }
-
-          &:hover {
-            background-color: $purple-highlight;
           }
 
           &:not(:last-child) {

@@ -141,7 +141,7 @@ export default {
             {
               rarity: 'Rare',
               img: require('@/assets/img/ShowCase/nft/BNB Rare.png'),
-              traitText: '10.00% have this trait'
+              traitText: '9.50% have this trait'
             },
             {
               rarity: 'Super Rare',
@@ -156,7 +156,7 @@ export default {
             {
               rarity: 'Legendary',
               img: require('@/assets/img/ShowCase/nft/BNB Legendary.png'),
-              traitText: '1.11% have this trait'
+              traitText: '1.61% have this trait'
             },
             {
               rarity: 'Mythic',
@@ -173,7 +173,7 @@ export default {
             {
               rarity: 'Rare',
               img: require('@/assets/img/ShowCase/nft/BTC Rare.png'),
-              traitText: '10.00% have this trait'
+              traitText: '9.50% have this trait'
             },
             {
               rarity: 'Super Rare',
@@ -188,7 +188,7 @@ export default {
             {
               rarity: 'Legendary',
               img: require('@/assets/img/ShowCase/nft/BTC Legendary.png'),
-              traitText: '1.11% have this trait'
+              traitText: '1.61% have this trait'
             },
             {
               rarity: 'Mythic',
@@ -205,7 +205,7 @@ export default {
             {
               rarity: 'Rare',
               img: require('@/assets/img/ShowCase/nft/DOGE Rare.png'),
-              traitText: '10.00% have this trait'
+              traitText: '9.50% have this trait'
             },
             {
               rarity: 'Super Rare',
@@ -220,7 +220,7 @@ export default {
             {
               rarity: 'Legendary',
               img: require('@/assets/img/ShowCase/nft/DOGE Legendary.png'),
-              traitText: '1.11% have this trait'
+              traitText: '1.61% have this trait'
             },
             {
               rarity: 'Mythic',
@@ -237,7 +237,7 @@ export default {
             {
               rarity: 'Rare',
               img: require('@/assets/img/ShowCase/nft/ADA Rare.png'),
-              traitText: '10.00% have this trait'
+              traitText: '9.50% have this trait'
             },
             {
               rarity: 'Super Rare',
@@ -252,7 +252,7 @@ export default {
             {
               rarity: 'Legendary',
               img: require('@/assets/img/ShowCase/nft/ADA Legendary.png'),
-              traitText: '1.11% have this trait'
+              traitText: '1.61% have this trait'
             },
             {
               rarity: 'Mythic',
@@ -269,7 +269,7 @@ export default {
             {
               rarity: 'Rare',
               img: require('@/assets/img/ShowCase/nft/ETH Rare.png'),
-              traitText: '10.00% have this trait'
+              traitText: '9.50% have this trait'
             },
             {
               rarity: 'Super Rare',
@@ -284,7 +284,7 @@ export default {
             {
               rarity: 'Legendary',
               img: require('@/assets/img/ShowCase/nft/ETH Legendary.png'),
-              traitText: '1.11% have this trait'
+              traitText: '1.61% have this trait'
             },
             {
               rarity: 'Mythic',
@@ -298,52 +298,47 @@ export default {
         {
           img: require('@/assets/img/ShowCase/slider/Bomber Jacket College.png'),
           name: 'Bomber Jacket College',
-          rarity: 'Rarity 6.0%',
+          rarity: 'Rarity 7.50%',
         },
         {
           img: require('@/assets/img/ShowCase/slider/Bucket Hat.png'),
           name: 'Bucket Hat',
-          rarity: 'Rarity 7.5%',
+          rarity: 'Rarity 8.00%',
         },
         {
           img: require('@/assets/img/ShowCase/slider/Crown.png'),
           name: 'Crown',
-          rarity: 'Rarity 3.0%',
+          rarity: 'Rarity 3.50%',
         },
         {
           img: require('@/assets/img/ShowCase/slider/Futuristic Glasses.png'),
           name: 'Futuristic Glasses',
-          rarity: 'Rarity 2.5%',
+          rarity: 'Rarity 3.00%',
         },
         {
           img: require('@/assets/img/ShowCase/slider/Headphones.png'),
           name: 'Headphones',
-          rarity: 'Rarity 3.5%',
+          rarity: 'Rarity 4.00%',
         },
         {
           img: require('@/assets/img/ShowCase/slider/Leather Jacket.png'),
           name: 'Leather Jacket',
-          rarity: 'Rarity 4.0%',
-        },
-        {
-          img: require('@/assets/img/ShowCase/slider/Racer Helmet.png'),
-          name: 'Racer Helmet',
-          rarity: 'Rarity 6.0%',
+          rarity: 'Rarity 5.50%',
         },
         {
           img: require('@/assets/img/ShowCase/slider/Shark Chain.png'),
           name: 'Shark Chain',
-          rarity: 'Rarity 6.0%',
+          rarity: 'Rarity 7.00%',
         },
         {
           img: require('@/assets/img/ShowCase/slider/Vest.png'),
           name: 'Vest',
-          rarity: 'Rarity 2.5%',
+          rarity: 'Rarity 3.30%',
         },
         {
           img: require('@/assets/img/ShowCase/slider/VR Glasses.png'),
           name: 'VR Glasses',
-          rarity: 'Rarity 3.0%',
+          rarity: 'Rarity 3.50%',
         },
       ],
       baseTypeSlider: null,
