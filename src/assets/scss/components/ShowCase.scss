@@ -222,6 +222,8 @@
         background: $black content-box;
         padding: 5px;
         display: flex;
+        align-items: flex-start;
+        max-height: 360px;
 
         &::after {
           content: "";
