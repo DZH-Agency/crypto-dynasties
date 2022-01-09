@@ -14,8 +14,10 @@
               <div class="faq-questions-item-content__question">
                 {{ question.question }}
               </div>
-              <div class="faq-questions-item-content__answer">
+              <div class="faq-questions-item-content__answer" v-if="!question.isHtml">
                 {{ question.answer }}
+              </div>
+              <div class="faq-questions-item-content__answer" v-else v-html="question.answer">
               </div>
             </div>
           </div>
@@ -41,11 +43,12 @@ export default {
         },
         {
           question: 'How can I get a "CryptoDynasties" NFT?',
-          answer: 'CryptoDynasties NFTs can be exclusively purchased on crypto.com platform. The featured drop will take place once the timer on this page runs out.\n\n' +
+          answer: 'CryptoDynasties NFTs can be purchased exclusively on the Crypto.com/NFT platform. The featured drop will take place on ....\n\n' +
               'To navigate to the Featured Drop simply click on "View Drop" in the first section of this page. \n\n' +
-              'Once the timer runs out on Crypto.com website, simply refresh the page and grab your collectible!\n\n' +
-              'The Featured drop will happen via Mystery Packs. Each pack has a fixed fee and contains 1 random character from the CryptoDynasties collection.',
-          img: require('@/assets/img/QuestionsSection/q2img.png')
+              'The timer on this page will indicate the date and time of the Featured Drop. Since we are using Crypto.com NFT\'s queue system (<a target="_blank" href="https://help.crypto.com/en/articles/5074395-buying-and-selling">What is the queue system?</a>), we advise to queue up early so you won\'t miss your chance to get a queue number.\n\n' +
+              'The Featured drop will offer 10,000 CryptoDynasties avatars. Each NFT will have a fixed price and will get you 1 random avatar from the “CryptoDynasties” collection. There\'s a purchasing limit of 5 avatars per person.',
+          img: require('@/assets/img/QuestionsSection/q2img.png'),
+          isHtml: true
         },
         {
           question: 'My favorite coin is not in this collection. Are you launching a sequel to the "CryptoDynasties" collection in the future?',

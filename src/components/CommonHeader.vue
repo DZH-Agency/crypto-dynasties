@@ -18,7 +18,7 @@
             </div>
             <div class="header-count-counter__exclusively">
               Exclusively on
-              <a href="https://crypto.com" target="_blank">
+              <a href="https://crypto.com" target="_blank" v-if="false">
                 <img src="@/assets/img/CommonHeader/crypto-com.png" alt="crypto-com">
               </a>
             </div>

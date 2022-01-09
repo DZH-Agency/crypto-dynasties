@@ -102,6 +102,14 @@
           font-size: 18px;
           line-height: 130%;
 
+          ::v-deep a {
+            text-decoration: underline;
+
+            &:hover {
+              color: $purple-highlight;
+            }
+          }
+
           @media (max-width: $tablet-bp) {
             font-size: 14px;
           }
