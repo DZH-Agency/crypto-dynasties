@@ -14,14 +14,8 @@
             decentralised platforms.
           </p>
           <p>
-            Depending on global metaverse and gaming ecosystem developments.
-          </p>
-          <p>
             Each platform has different compatibility rules and characteristics for their asset files which means we'll
-            choose a certain platform each month depending on global metaverse and <a href="https://crypto.com"
-                                                                                      target="_blank">Crypto.com</a>
-            gaming ecosystem
-            developments.
+            choose a certain platform each month depending on global metaverse and gaming ecosystem developments.
           </p>
           <p>
             Our long term vision is to airdrop state-of-the-art limited edition items that holders can either sell or

@@ -5,10 +5,10 @@
       <div class="header">
         <img src="@/assets/img/CommonHeader/Bitcoin.png" alt="btc" class="header__img"/>
         <div class="header-count">
-          <div class="header-count__title">
-            Industry Renowned NFT Artist Nuxer Unveils World’s First
-            Crypto Mascot Collection
-          </div>
+<!--          <div class="header-count__title">-->
+<!--            Industry Renowned NFT Artist Nuxer Unveils World’s First-->
+<!--            Crypto Mascot Collection-->
+<!--          </div>-->
           <div class="header-count__crypto-text">
             "CryptoDynasties"
           </div>

@@ -2,7 +2,7 @@
   <div class="footer-wrapper">
     <div class="container">
       <div class="footer">
-        {{ '2021 Copyrights © CryptoDynasties. \n All rights reserved.' }}
+        {{ '2022 Copyrights © CryptoDynasties. \n All rights reserved.' }}
       </div>
     </div>
   </div>
