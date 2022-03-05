@@ -2,7 +2,7 @@
   <div id="app">
     <common-navbar/>
     <div class="content">
-      <common-header :timer-data="timerData"/>
+      <common-header :timer-data="timerDate"/>
       <div id="story">
         <young-crypto/>
       </div>
@@ -18,7 +18,7 @@
       <div id="faq">
         <questions-section/>
       </div>
-      <dont-miss :timer-data="timerData"/>
+      <dont-miss :timer-data="timerDate"/>
     </div>
     <common-footer/>
   </div>
@@ -49,41 +49,51 @@ export default {
     CommonHeader,
     CommonNavbar
   },
+  targetDate: null,
   data() {
     return {
-      timerData: {
+      timerDate: {
         days: '00',
         hours: '00',
         minutes: '00',
         seconds: '00'
       },
-      targetDate: new Date(2022, 0, 20, 0, 0, 0, 0),
       diffInSeconds: null
     }
   },
   mounted() {
-    setInterval(() => {
-      this.diffInSeconds = Math.floor(Math.abs(this.targetDate - new Date()) / 1000);
-
-      const days = Math.floor(this.diffInSeconds / 86400);
-      this.diffInSeconds -= days * 86400;
-
-      // calculate hours
-      const hours = Math.floor(this.diffInSeconds / 3600) % 24;
-      this.diffInSeconds -= hours * 3600;
-
-      // calculate minutes
-      const minutes = Math.floor(this.diffInSeconds / 60) % 60;
-      this.diffInSeconds -= minutes * 60;
-
-      this.timerData = {
-        days: String(days).padStart(2, '0'),
-        hours: String(hours).padStart(2, '0'),
-        minutes: String(minutes).padStart(2, '0'),
-        seconds: String(this.diffInSeconds).padStart(2, '0')
-      }
-
-    }, 1000)
+    // const targetDate = new Date(Date.UTC(2022, 3, 14, 24))
+    // targetDate.setHours(targetDate.getHours() - 8 + new Date().getTimezoneOffset() / 60)
+    // this.$options.targetDate = targetDate
+    //
+    // setInterval(() => {
+    //   const today = new Date(new Date().getTime() + new Date().getTimezoneOffset() * 60 * 1000 + new Date().getTimezoneOffset() / 60 * 1000)
+    //   today.setHours(today.getHours() - 8)
+    //
+    //   let diffInSeconds = Math.floor((this.$options.targetDate - today) / 1000);
+    //   if (diffInSeconds <= 0) {
+    //     return
+    //   }
+    //
+    //   const days = Math.floor(diffInSeconds / 86400);
+    //   diffInSeconds -= days * 86400;
+    //
+    //   // calculate hours
+    //   const hours = Math.floor(diffInSeconds / 3600) % 24;
+    //   diffInSeconds -= hours * 3600;
+    //
+    //   // calculate minutes
+    //   const minutes = Math.floor(diffInSeconds / 60) % 60;
+    //   diffInSeconds -= minutes * 60;
+    //
+    //   this.timerDate = {
+    //     days: String(days).padStart(2, '0'),
+    //     hours: String(hours).padStart(2, '0'),
+    //     minutes: String(minutes).padStart(2, '0'),
+    //     seconds: String(diffInSeconds).padStart(2, '0')
+    //   }
+    //
+    // }, 1000)
   }
 }
 </script>

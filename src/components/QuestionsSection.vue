@@ -43,16 +43,18 @@ export default {
         },
         {
           question: 'How can I get a "CryptoDynasties" NFT?',
-          answer: 'CryptoDynasties NFTs can be purchased exclusively on the Crypto.com/NFT platform. The featured drop will take place on ....\n\n' +
-              'To navigate to the Featured Drop simply click on "View Drop" in the first section of this page. \n\n' +
-              'The timer on this page will indicate the date and time of the Featured Drop. Since we are using Crypto.com NFT\'s queue system (<a target="_blank" href="https://help.crypto.com/en/articles/5074395-buying-and-selling">What is the queue system?</a>), we advise to queue up early so you won\'t miss your chance to get a queue number.\n\n' +
-              'The Featured drop will offer 10,000 CryptoDynasties avatars. Each NFT will have a fixed price and will get you 1 random avatar from the “CryptoDynasties” collection. There\'s a purchasing limit of 5 avatars per person.',
+          // answer: 'CryptoDynasties NFTs can be purchased exclusively on the Crypto.com/NFT platform. The featured drop will take place on ....\n\n' +
+          //     'To navigate to the Featured Drop simply click on "View Drop" in the first section of this page. \n\n' +
+          //     'The timer on this page will indicate the date and time of the Featured Drop. Since we are using Crypto.com NFT\'s queue system (<a target="_blank" href="https://help.crypto.com/en/articles/5074395-buying-and-selling">What is the queue system?</a>), we advise to queue up early so you won\'t miss your chance to get a queue number.\n\n' +
+          //     'The Featured drop will offer 10,000 CryptoDynasties avatars. Each NFT will have a fixed price and will get you 1 random avatar from the “CryptoDynasties” collection. There\'s a purchasing limit of 5 avatars per person.',
+          answer: 'TBA',
           img: require('@/assets/img/QuestionsSection/q2img.png'),
           isHtml: true
         },
         {
           question: 'My favorite coin is not in this collection. Are you launching a sequel to the "CryptoDynasties" collection in the future?',
-          answer: 'We are sorry to hear that. Let us know which cryptocurrency you\'d like to see in the sequel of this project by filling in this form. Once we have enough votes, the most requested 5 coins will make up the second collection!',
+          answer: 'We are sorry to hear that. Let us know which cryptocurrency you\'d like to see in the sequel of this project by filling in <a target="_blank" href="https://forms.gle/qfBt6PaT2sJ5yAEu6">this form</a>. Once we have enough votes, the most requested 5 coins will make up the second collection!',
+          isHtml: true,
           img: require('@/assets/img/QuestionsSection/q3img.png')
         },
       ]

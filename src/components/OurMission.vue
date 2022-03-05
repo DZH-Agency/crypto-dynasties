@@ -14,6 +14,9 @@
             decentralised platforms.
           </p>
           <p>
+            Depending on global metaverse and gaming ecosystem developments.
+          </p>
+          <p>
             Each platform has different compatibility rules and characteristics for their asset files which means we'll
             choose a certain platform each month depending on global metaverse and <a href="https://crypto.com"
                                                                                       target="_blank">Crypto.com</a>

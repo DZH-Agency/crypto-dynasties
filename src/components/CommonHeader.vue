@@ -17,10 +17,10 @@
               <span data-time="Days">{{ timerData.days }}</span>:<span data-time="Hours">{{ timerData.hours }}</span>:<span data-time="Minutes">{{ timerData.minutes }}</span>:<span data-time="Seconds">{{ timerData.seconds }}</span>
             </div>
             <div class="header-count-counter__exclusively">
-              Exclusively on
-              <a href="https://crypto.com" target="_blank" v-if="false">
-                <img src="@/assets/img/CommonHeader/crypto-com.png" alt="crypto-com">
-              </a>
+              Exclusively on TBA
+<!--              <a href="https://crypto.com" target="_blank">-->
+<!--                <img src="@/assets/img/CommonHeader/crypto-com.png" alt="crypto-com">-->
+<!--              </a>-->
             </div>
             <div class="header-count-counter__btn">
               <span>View Drop</span>

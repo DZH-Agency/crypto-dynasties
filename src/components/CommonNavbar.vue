@@ -16,10 +16,10 @@
               </a>
             </div>
             <div class="navbar-social">
-              <a href="#" target="_blank" class="navbar-social__item">
+              <a href="https://discord.gg/cryptodynasties" target="_blank" class="navbar-social__item">
                 <img src="@/assets/img/CommonNavbar/Discord.png" alt="">
               </a>
-              <a href="#" target="_blank" class="navbar-social__item">
+              <a href="https://twitter.com/CryptoDynasties" target="_blank" class="navbar-social__item">
                 <img src="@/assets/img/CommonNavbar/Twitter.png" alt="">
               </a>
             </div>
